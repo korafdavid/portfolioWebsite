@@ -25,7 +25,7 @@ app.listen(PORT, () => {
 });
 
 app.get('/styles', function(req, res) {
-  res.sendFile(process.cwd()+ '/css/styles.css')
+  res.sendFile(process.cwd()+ "/css/styles.css")
 });
 
 app.get('/js', (req,res) => {
