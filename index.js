@@ -65,7 +65,7 @@ app.get('/icon1', (req,res) => {
 
 
 
-app.post('/send', (req, res) => {
+app.post('/send:1', (req, res) => {
   
   let form = new multiparty.Form();
   let data = {};
