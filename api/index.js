@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 
 app.route("/").get(function (req, res) {
-  res.sendFile(process.cwd() + "/index.html");
+  res.sendFile(process.cwd() + "./index.html");
 });
 
 app.listen(PORT, () => {
@@ -65,7 +65,7 @@ app.get('/icon1', (req,res) => {
 
 
 
-app.post('/send:1', (req, res) => {
+app.post('/send', (req, res) => {
   
   let form = new multiparty.Form();
   let data = {};
