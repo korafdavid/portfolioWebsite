@@ -17,15 +17,18 @@ const transporter = nodemailer.createTransport({
 
 
 app.route("/").get(function (req, res) {
-  res.sendFile(process.cwd() + "/index.html");
+  res.sendFile(__dirname + '/public/index.html');
 });
+
+app.use(express.static(__dirname + '/public'));
+
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}...`);
 });
 
 app.get('/styles', function(req, res) {
-  res.sendFile(process.cwd()+ '/css/styles.css')
+  res.sendFile(process.cwd()+ "/public/css/styles.css")
 });
 
 app.get('/js', (req,res) => {
