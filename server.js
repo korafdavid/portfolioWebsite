@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 
 app.route("/").get(function (req, res) {
-  res.sendFile("index.html", {root: __dirname});
+  res.sendFile("./index.html", {root: __dirname});
 });
 
 app.listen(PORT, () => {
