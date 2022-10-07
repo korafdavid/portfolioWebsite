@@ -99,7 +99,7 @@ app.post('/lexicon',(req,res)=>{
 
   const mail = {
     from: 'LEXICON EVENTS <okoroafordavid61@gmail.com>',  
-    to: 'another@sample.com', 
+    to: 'noelng1981@gmail.com', 
     tile: 'LEXICON EVENT CONTACT',
     subject: 'Sample Subject', 
     html: `<body style="margin: 0; padding: 0;"> 
