@@ -119,7 +119,7 @@ app.post('/lexicon',(req,res)=>{
                                     <tr>
                                         <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
                                             
-                                            <b>${val.title}</b>
+                                            <b>LEXICAN EVENT CONTACT </b>
                                         </td>
                                     </tr>
                                     <tr>
